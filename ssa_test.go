@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"testing"
 
-	"github.com/asticode/go-astisub"
-	"github.com/asticode/go-astitools/ptr"
+	"github.com/molotovtv/go-astisub"
+	"github.com/molotovtv/go-astitools/ptr"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -12,8 +12,8 @@ import (
 
 	"sort"
 
-	"github.com/asticode/go-astitools/map"
-	"github.com/asticode/go-astitools/string"
+	"github.com/molotovtv/go-astitools/map"
+	"github.com/molotovtv/go-astitools/string"
 	"github.com/pkg/errors"
 )
 

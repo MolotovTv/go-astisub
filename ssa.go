@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/asticode/go-astilog"
-	"github.com/asticode/go-astitools/ptr"
+	"github.com/molotovtv/go-astilog"
+	"github.com/molotovtv/go-astitools/ptr"
 	"github.com/pkg/errors"
 )
 
