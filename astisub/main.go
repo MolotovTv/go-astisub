@@ -22,7 +22,6 @@ func main() {
 	var s = astiflag.Subcommand()
 	flag.Var(&inputPath, "i", "the input paths")
 	flag.Parse()
-	// astilog.SetLogger(astilog.New(astilog.FlagConfig()))
 
 	// Validate input path
 	if len(inputPath) == 0 {
