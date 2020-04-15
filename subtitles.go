@@ -364,23 +364,10 @@ func (s *Subtitles) ForceDuration(d time.Duration, addDummyItem bool) {
 }
 
 // Fragment fragments subtitles with a specific fragment duration
-func (s *Subtitles) Fragment(f time.Duration, forceZeroStart bool) {
+func (s *Subtitles) Fragment(f time.Duration) {
 	// Nothing to fragment
 	if len(s.Items) == 0 {
 		return
-	}
-
-	// Makes sure the fragmented subtitle always starts at 00:00:00.
-	if forceZeroStart {
-		originalStartAt := s.Items[0].StartAt
-		if originalStartAt != time.Duration(0) {
-			it := Item{
-				StartAt: time.Duration(0),
-				EndAt:   originalStartAt,
-				Lines:   []Line{{Items: []LineItem{{Text: "test"}}}},
-			}
-			s.Items = append([]*Item{&it}, s.Items...)
-		}
 	}
 
 	// Here we want to simulate fragments of duration f until there are no subtitles left in that period of time
